@@ -6,6 +6,8 @@ body {
     line-height: 150%;
     color: #333;
     background: #efeee7;
+    text-align: justify;
+    text-justify: inter-word;
   }
   
   header {
@@ -42,8 +44,6 @@ body {
   
   #main-bio {
     width: 70%;
-    text-align: justify;
-    text-justify: inter-word;
   }
   
   #contact-info {
