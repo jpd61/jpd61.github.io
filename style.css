@@ -1,7 +1,7 @@
 :root {
   --primary-color: rgb(59, 56, 56);
   --secondary-color: rgb(36, 27, 116);
-  --tertiary-color: rgb(241, 211, 77);
+  --tertiary-color: rgb(247, 223, 91);
 }
 
 * {
@@ -10,18 +10,19 @@
   box-sizing: border-box;
 }
 
+html, body{
+  height: 100%;
+  font-weight: 800;
+}
+
 body {
     padding: 0;
     margin: 0;
     font-family: Helvetica, Arial, sans-serif;
-    background: #efeee7;
   }
   
   header {
-    padding: 20px 35px;
-    background: var(--primary-color);
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     position: -webkit-sticky;
     position: sticky;
@@ -32,26 +33,6 @@ body {
     background-attachment: fixed;
     background-position: 80%;
     z-index: 9999;
-  }
-
-  header h1 {
-    font-weight: bold;
-    font-family: Helvetica;
-    font-size: 3em;
-    color: var(--tertiary-color);
-    text-shadow: 
-      0 1px 0 #ccc, 
-      0 2px 0 #c9c9c9, 
-      0 3px 0 #bbb, 
-      0 4px 0 #b9b9b9, 
-      0 5px 0 #aaa, 
-      0 6px 1px rgba(0,0,0,.1), 
-      0 0 5px rgba(0,0,0,.1), 
-      0 1px 3px rgba(0,0,0,.3), 
-      0 3px 5px rgba(0,0,0,.2), 
-      0 5px 10px rgba(0,0,0,.25), 
-      0 10px 10px rgba(0,0,0,.2), 
-      0 20px 20px rgba(0,0,0,.15);
   }
   
   h1 {
@@ -67,6 +48,59 @@ body {
     font-size: 24px;
   }
 
+  svg {
+    font: 4em 'Arial';
+    width: 960px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.text-position {
+  display: inline-block;
+  justify-content: left;
+  align-items: flex-start;
+}
+
+.text-copy {
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 6% 29%;
+  stroke-width: 5px;
+  stroke-dashoffset: 0%;
+  animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+stroke: #fe9901;
+animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+stroke: #970f01;
+animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+stroke: rgb(247, 223, 91);
+animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+stroke: #fc1c02;
+animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+stroke: #970f01;
+animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+100% {stroke-dashoffset: -35%;}
+}
+
+  /* Hero Section */
+
   .hero {
     background-image: url("./assets/images/header.jpg");
     background-size: cover;
@@ -78,6 +112,8 @@ body {
     background-attachment: fixed;
     background-position: 80%;
 }
+
+/* Headshot - working to make polygon match background */
 
   .headshot-container {
     margin: 3rem auto;
@@ -92,7 +128,7 @@ body {
 	  position: relative;
 	  top: 0; bottom: 0; left: 0; right: 0;
 	  background-color: goldenrod;
-	  clip-path: polygon(50% 0, 93.3% 25%, 93.3% 75%, 50% 100%, 6.7% 75%, 6.7% 25%);
+	  clip-path: polygon(50% 0, 93.3% 25%, 93.3% 75%, 50% 100%, 6.7% 75%, 6.7% 25%); /* needs adjusting */
 	  transform: scale(1.077);
 	  transition: transform 0.3s;
 }
@@ -109,12 +145,10 @@ body {
 	transform: scale(1.154);
 }
 
-.headshot A {
-	position: absolute;
-	top: 0; bottom: 0; left: 0; right: 0;
-	background-size: cover;
-	background-position: center;
-	clip-path: polygon(50% 0, 93.3% 25%, 93.3% 75%, 50% 100%, 6.7% 75%, 6.7% 25%);
+#bio-image {
+  width: 200px;
+  height: 200px;
+  margin-right: 20px;
 }
   
   .container {
@@ -136,8 +170,3 @@ body {
     width: 30%;
   }
   
-  #bio-image {
-    width: 200px;
-    height: 200px;
-    margin-right: 20px;
-  }
