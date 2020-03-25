@@ -1,5 +1,5 @@
 :root {
-  --primary-color: rgb(59, 56, 56);
+  --primary-color: rgb(253, 152, 0);
   --secondary-color: rgb(36, 27, 116);
   --tertiary-color: rgb(247, 223, 91);
 }
@@ -10,18 +10,12 @@
   box-sizing: border-box;
 }
 
-html, body{
-  height: 100%;
-  font-weight: 800;
-}
-
 body {
-    padding: 0;
-    margin: 0;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Arial, sans-serif;
   }
   
   header {
+    padding: 20px 35px;
     display: flex;
     flex-wrap: wrap;
     position: -webkit-sticky;
@@ -38,15 +32,16 @@ body {
   h1 {
     padding: 20px 0;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     font-size: 28px;
     color: #eee;
-    text-align: center;
   }
   
   h2 {
     font-size: 24px;
   }
+
+  /* Animated Text */
 
   svg {
     font: 4em 'Arial';
@@ -104,9 +99,7 @@ animation-delay: -5s;
   .hero {
     background-image: url("./assets/images/header.jpg");
     background-size: cover;
-    background-position: center;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
     background-attachment: fixed;
@@ -127,7 +120,6 @@ animation-delay: -5s;
     display: inline-block;
 	  position: relative;
 	  top: 0; bottom: 0; left: 0; right: 0;
-	  background-color: goldenrod;
 	  clip-path: polygon(50% 0, 93.3% 25%, 93.3% 75%, 50% 100%, 6.7% 75%, 6.7% 25%); /* needs adjusting */
 	  transform: scale(1.077);
 	  transition: transform 0.3s;
@@ -136,7 +128,6 @@ animation-delay: -5s;
 .headshot::before { 
 	position: absolute;
 	top: 0; bottom: 0; left: 0; right: 0;
-	background-color: goldenrod;
 	clip-path: polygon(50% 0, 93.3% 25%, 93.3% 75%, 50% 100%, 6.7% 75%, 6.7% 25%);
 	transform: scale(1.077);
 	transition: transform 0.3s;
@@ -150,23 +141,33 @@ animation-delay: -5s;
   height: 200px;
   margin-right: 20px;
 }
+
+/* Bio Section */
+
+.bio-section {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #ff2702;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.bio-section h1 {
+  color: #fddc57;
+  font-weight: bold;
+  display: flex;
+  text-align: right;
+}
+
+.bio-section p {
+  color: #fddc57;
+  font-weight: bold;
+
+  margin: 0 auto 35px auto;
+}
   
-  .container {
-    width: 1024px;
-    margin: 0 auto;
-  }
+
   
-  #main-bio,
-  #contact-info,
-  #bio-image {
-    float: left;
-  }
-  
-  #main-bio {
-    width: 70%;
-  }
-  
-  #contact-info {
-    width: 30%;
-  }
   
