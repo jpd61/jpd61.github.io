@@ -146,8 +146,7 @@ animation-delay: -5s;
   background-color: black;
   display: flex;
   flex-wrap: wrap;
-  border-top: 3px solid white;
-  border-bottom: 3px solid white;
+  border-top: 2px solid white;
   padding-top: 10px;
   padding-bottom: 15px;
   width: 100%;
@@ -155,7 +154,7 @@ animation-delay: -5s;
 }
 
 .bio-section h1 {
-  color: #fddc57;
+  color: white;
   font-weight: bold;
   text-align: right;
   margin-right: 20px;
@@ -164,9 +163,13 @@ animation-delay: -5s;
 }
 
 .bio-section p {
-  color: #fddc57;
+  color: white;
   font-weight: bold;
   margin: auto 20px 35px 20px;
+  width: 40%;
+  text-align: justify;
+  margin-left: 20px;
+  padding-left: 50px;
 }
 
 /* Portfolio */
@@ -178,6 +181,8 @@ animation-delay: -5s;
   flex-wrap: wrap;
   padding: 5px;
   z-index: 1000;
+  background-color: black;
+  color: white;
 }
 
 .site {
@@ -185,7 +190,7 @@ animation-delay: -5s;
   background: var(--secondary-color);
   color: var(--primary-color);
   flex: 1;
-  border: 1px solid silver;
+  border: 2px solid silver;
   min-width: 400px;
 }
 
@@ -275,7 +280,6 @@ animation-delay: -5s;
 .site-4 {
   background-image: url("./assets/images/pack684.png");
 }
-
 
 
 /* Footer */
