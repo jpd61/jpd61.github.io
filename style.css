@@ -125,7 +125,7 @@ animation-delay: -5s;
     width: 12.5rem;
     height: 12.5rem;
 	  position: absolute;
-	  top: 152px; bottom: 0; left: 970px; right: 20px;
+	  top: 200px; bottom: 0; left: 0px; right: 0px; /* I need to figure out how to place this in an exact location with flex - found a couple of close solutions but not perfect yet top: 152px; bottom: 0; left: 970px; right: 20px works on main computer only*/
 	  clip-path: polygon(76% 7%, 100% 50%, 76% 91.5%, 25% 91.5%, 0 50%, 24% 7%);
     transform: scale(.80);
     overflow: hidden;
@@ -139,6 +139,7 @@ animation-delay: -5s;
 }
 
 /* Bio Section */
+
 
 
 .bio-section {
@@ -159,6 +160,7 @@ animation-delay: -5s;
   text-align: right;
   margin-right: 20px;
   margin-left: 20px;
+  width: 95%;
 }
 
 .bio-section p {
