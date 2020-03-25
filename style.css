@@ -186,7 +186,7 @@ animation-delay: -5s;
   color: var(--primary-color);
   flex: 1;
   border: 1px solid silver;
-  min-width: 300px;
+  min-width: 400px;
 }
 
 .site-img {
