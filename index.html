@@ -24,6 +24,25 @@
           <use xlink:href="#s-text" class="text-copy"></use>
         </g>
       </svg></div>  
+
+      <!-- Navigation -->
+      <nav>
+        <!-- Unordered list element -->
+        <ul>
+            <!-- List item element -->
+            <li>
+                <!-- Anchor element -->
+                <a href="#about" style="text-decoration:none">About</a>
+            </li>
+            <li>
+                <a href="#portfolio" style="text-decoration:none">Portfolio</a>
+            </li>
+            <li>
+                <a href="#contact-info" style="text-decoration:none">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
     </header>
 
     <!-- Hero Section -->
@@ -39,7 +58,7 @@
             </div> 
           </div>
 
-          <article class="bio-section">
+          <article id="about" class="bio-section">
             <h1>JOSEPH DEWOODY</h1>
             <p>
             I am an entrepreneur and energy executive that has spent my career in oil and gas acquisitions and management. 
@@ -54,7 +73,7 @@
     <!-- text-decoration:none not working through css: because of the way I linked it? used on html for now-->
     <section id="portfolio" class="portfolio">
 
-      <div class="portfolio">
+      <div id="portfolio" class="portfolio">
 
         <article class="site">
           <a href="https://www.valormineralmanagement.com/" style="text-decoration:none">  
@@ -112,7 +131,7 @@
 
     </section>
 
-    <div class="contact-info">
+    <div id="contact-info" class="contact-info">
       <section id="contact-info">
         <ul>
           <li><a href="mailto:jpd@dewoodyoil.com"><img alt="E-Mail" src="./assets/images/gmail.png"></a></li>

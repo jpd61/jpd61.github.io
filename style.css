@@ -69,32 +69,55 @@ body {
 }
 
 .text-copy:nth-child(1){
-stroke: #fe9901;
+stroke: whitesmoke;
 animation-delay: -1;
 }
 
 .text-copy:nth-child(2){
-stroke: #fedd58;
+stroke: #3a021b;
 animation-delay: -2s;
 }
 
 .text-copy:nth-child(3){
-stroke: #fc1c02;
+stroke: #d01832;
 animation-delay: -3s;
 }
 
 .text-copy:nth-child(4){
-stroke: rgb(247, 223, 91);
+stroke: #ff8a9c;
 animation-delay: -4s;
 }
 
 .text-copy:nth-child(5){
-stroke: #ff1800;
+stroke: #312d2e;
 animation-delay: -5s;
 }
 
 @keyframes stroke-offset{
 100% {stroke-dashoffset: -35%;}
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 10px 15px;
+  font-weight: lighter;
+  font-size: 1.55vw;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: whitesmoke;
+}
+
+header nav ul li a:hover {
+  background: gray;
+  color: whitesmoke;
+  border-radius: 15px;
+  text-shadow: none;
 }
 
   /* Hero Section */
@@ -117,7 +140,7 @@ animation-delay: -5s;
     margin: 3rem auto;
     padding: 1rem 0 2.4rem;
     max-width: 50rem;
-    margin-bottom: 400px;
+    margin-bottom: 200px;
   }
 
 
@@ -125,7 +148,7 @@ animation-delay: -5s;
     width: 12.5rem;
     height: 12.5rem;
 	  position: absolute;
-	  top: 200px; bottom: 0; left: 0px; right: 0px; /* I need to figure out how to place this in an exact location with flex - found a couple of close solutions but not perfect yet top: 152px; bottom: 0; left: 970px; right: 20px works on main computer only*/
+	  top: 180px; bottom: 0; left: 950px; right: 0; /* I need to figure out how to place this in an exact location with flex - found a couple of close solutions but not perfect yet top: 152px; bottom: 0; left: 970px; right: 20px works on main computer only*/
 	  clip-path: polygon(76% 7%, 100% 50%, 76% 91.5%, 25% 91.5%, 0 50%, 24% 7%);
     transform: scale(.80);
     overflow: hidden;
@@ -229,7 +252,6 @@ animation-delay: -5s;
   margin-bottom: 5px;
   top: 200px;
   transition-duration: 0.6s;
-  text-decoration: none;
 }
 
 .site-img h4 {
@@ -312,7 +334,7 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  border-top: 1px solid black;
+  border-top: 1px solid;
 }
 
 footer h2 {
