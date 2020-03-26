@@ -281,6 +281,27 @@ animation-delay: -5s;
   background-image: url("./assets/images/pack684.png");
 }
 
+.contactinfo {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.contact-info section ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.contact-info section ul li img {
+  max-width: 40px;
+  max-height: 40px;
+}
 
 /* Footer */
 
@@ -291,11 +312,12 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  border-top: 1px solid black;
 }
 
 footer h2 {
   color: black;
-  font-size: 16px;
+  font-size: 14px;
   margin: 0;
 }
 
