@@ -108,7 +108,7 @@ header nav ul {
 header nav ul li a {
   padding: 10px 15px;
   font-weight: lighter;
-  font-size: 1.55vw;
+  font-size: 1.2vw;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   color: whitesmoke;
 }
@@ -140,23 +140,6 @@ header nav ul li a:hover {
 
 /* Headshot - working to make polygon match background */
 
-  .headshot-container {
-    margin: 3rem auto;
-    padding: 1rem 0 2.4rem;
-    max-width: 50rem;
-    margin-bottom: 200px;
-  }
-
-
-  .headshot {
-    width: 12.5rem;
-    height: 12.5rem;
-	  clip-path: polygon(76% 7%, 100% 50%, 76% 91.5%, 25% 91.5%, 0 50%, 24% 7%);
-    transform: scale(.80);
-    overflow: hidden;
-    align-content: right;
-    z-index: 10;
-}
 
 #bio-image {
   width: 200px;
@@ -190,12 +173,20 @@ header nav ul li a:hover {
 
 .bio-section p {
   color: white;
-  font-weight: bold;
-  margin: auto 20px 35px 20px;
-  width: 40%;
+  width: 80%;
   text-align: justify;
   margin-left: 20px;
   padding-left: 50px;
+  margin-top: 50px;
+}
+
+.headshot {
+  width: 12.5rem;
+  height: 12.5rem;
+  clip-path: polygon(76% 7%, 100% 50%, 76% 91.5%, 25% 91.5%, 0 50%, 24% 7%);
+  transform: scale(.80);
+  overflow: hidden;
+  z-index: 10;
 }
 
 /* Portfolio */
@@ -355,4 +346,45 @@ footer a {
   color: var(--secondary-color);
 }
   
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
   
+  
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+
+  .bio-section h1 {
+    text-align: wrap;
+  }
+ 
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+}
+
+header h1 {
+    width: 100%;
+    text-align: center;
+}
+
+header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+header nav ul li a {
+    font-size: 20px;
+}
+
+.text-position {
+  display: inline-block;
+  justify-content: center;
+  align-items: flex-start;
+}
+
