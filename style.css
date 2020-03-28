@@ -171,7 +171,7 @@ header nav ul li a:hover {
   color: white;
   width: 80%;
   text-align: justify;
-  margin-left: 20px;
+  margin-left: 2em;
   padding-left: 50px;
   margin-top: 50px;
 }
@@ -202,7 +202,7 @@ header nav ul li a:hover {
   grid-gap: 10px;
   grid-auto-flow: dense;
   width:80%;
-  margin-left: 2em;
+  margin-left: 5em;
 }
 
 .grid-item {
@@ -222,7 +222,7 @@ header nav ul li a:hover {
 
 .item-2 {
   grid-column: 3 / span 1;
-  grid-row: 1 / span 1;
+  grid-row: 1 / span 2;
   background-image: url("./assets/images/clear-fork-royalty.png");
   background-size: cover;
 }
