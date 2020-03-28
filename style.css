@@ -59,9 +59,9 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  background: gray;
-  color: whitesmoke;
-  border-radius: 15px;
+  background: #8d8d8d;
+  color: #353535;
+  border-radius: 5px;
   text-shadow: none;
 }
 
@@ -145,7 +145,7 @@ header nav ul li a:hover {
   z-index: 1000;
   background-color: #353535;
   color: white;
-  padding-bottom: 250px;
+  padding-bottom: 100px;
 }
 
 .portfolio h2 {
@@ -155,6 +155,7 @@ header nav ul li a:hover {
   margin-right: 20px;
   margin-left: 20px;
   margin-bottom: 20px;
+  margin-top: 10px;
   width: 95%;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -279,3 +280,12 @@ footer a {
   color: var(--secondary-color);
 }
   
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 900px) {
+
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+}
