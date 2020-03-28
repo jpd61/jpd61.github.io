@@ -80,14 +80,9 @@ header nav ul li a:hover {
     overflow: hidden;
 }
 
-/* Headshot - working to make polygon match background */
 
 
-#bio-image {
-  width: 200px;
-  height: 200px;
-  margin-right: 20px;
-}
+
 
 /* Bio Section */
 
@@ -99,11 +94,12 @@ header nav ul li a:hover {
   display: flex;
   flex-wrap: wrap;
   padding-top: 10px;
-  padding-bottom: 15px;
+  padding-bottom: 250px;
   width: 100%;
   z-index: 2000;
-
 }
+
+
 
 .bio-section h1 {
   color: #8d8d8d;
@@ -112,24 +108,33 @@ header nav ul li a:hover {
   margin-right: 20px;
   margin-left: 20px;
   width: 95%;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.bio-section p {
-  color: #8d8d8d;
-  width: 80%;
-  text-align: justify;
-  margin-left: 2em;
-  padding-left: 50px;
-  margin-top: 50px;
+
+.headshot-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
 }
 
 .headshot {
-  width: 12.5rem;
-  height: 12.5rem;
-
-  transform: scale(.80);
-  overflow: hidden;
   z-index: 10;
+  margin-left: 5em;
+  border-radius: 5px;
+}
+
+.bio-text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: #8d8d8d;
+  text-align: justify;
+  width: 60%;
+  margin-top: 5em;
+  margin-left: 5em;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Portfolio */
@@ -138,14 +143,26 @@ header nav ul li a:hover {
   width: 100%;
   padding: 5px;
   z-index: 1000;
-  background-color: black;
+  background-color: #353535;
   color: white;
+  padding-bottom: 250px;
+}
+
+.portfolio h2 {
+  color: #8d8d8d;
+  font-weight: bold;
+  text-align: right;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  width: 95%;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 200px);
+  grid-template-rows: repeat(4, 200px);
   grid-gap: 10px;
   grid-auto-flow: dense;
   width:80%;
@@ -180,7 +197,7 @@ header nav ul li a:hover {
 
 .item-2 {
   grid-column: 3 / span 1;
-  grid-row: 1 / span 2;
+  grid-row: 1 / span 1;
   background-image: url("./assets/images/clear-fork-royalty.png");
   background-size: cover;
 }
@@ -207,6 +224,7 @@ header nav ul li a:hover {
   position: relative;
   font-size: 24px;
   transition: 1s ease;
+  margin-bottom: 20px;
 
 }
 
@@ -215,24 +233,21 @@ header nav ul li a:hover {
   transition: 1s ease;
 }
 
-.contactinfo {
-  display: flex;
-  flex-wrap: wrap;
+.contact-info {
+  background-color: #353535;
+  align-items: center;
   width: 100%;
   padding: 20px;
-  margin-top: 40px;
-  margin-bottom: 40px;
 }
 
-.contact-info section ul {
+.contact-info ul {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   list-style: none;
 }
 
-.contact-info section ul li img {
+.contact-info ul li img {
   max-width: 40px;
   max-height: 40px;
 }
@@ -240,17 +255,17 @@ header nav ul li a:hover {
 /* Footer */
 
 footer {
-  background: gray;
+  background: #353535;
   width: 100%;
   padding: 40px 35px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  border-top: 1px solid;
+  color: #8d8d8d;
 }
 
 footer h2 {
-  color: black;
+  color: #8d8d8d;
   font-size: 14px;
   margin: 0;
 }
@@ -264,48 +279,3 @@ footer a {
   color: var(--secondary-color);
 }
   
-/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
-@media screen and (max-width: 980px) {
-  
-}
-
-/* MEDIA QUERY FOR TABLETS AND SMALLER */
-@media screen and (max-width: 768px) {
-
-.bio-section h1 {
-    text-align: wrap;
-}
-}
- 
-
-
-/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
-@media screen and (max-width: 575px) {
-
-  header {
-    padding-bottom: 0;
-    justify-content: center;
-    position: relative;
-}
-
-header h1 {
-    width: 100%;
-    text-align: center;
-}
-
-header nav ul {
-    margin-top: 20px;
-    width: 100%;
-    justify-content: center;
-}
-
-header nav ul li a {
-    font-size: 20px;
-}
-
-.text-position {
-  display: inline-block;
-  justify-content: center;
-  align-items: flex-start;
-}
-}
