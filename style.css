@@ -29,7 +29,7 @@
     margin: 0;
     margin-bottom: 15px;
     font-size: 28px;
-    color: #eee;
+    color: #8d8d8d;
   }
   
   h2 {
@@ -37,61 +37,10 @@
   }
 
   h3 {
-    color: black;
+    color: #8d8d8d;
   }
 
-  /* Animated Text */
-
-  svg {
-    font: 4em 'Arial';
-    width: 960px;
-    height: 100px;
-    margin: 0 auto;
-}
-
-.text-position {
-  display: inline-block;
-  justify-content: left;
-  align-items: flex-start;
-}
-
-.text-copy {
-  fill: none;
-  stroke: white;
-  stroke-dasharray: 6% 29%;
-  stroke-width: 5px;
-  stroke-dashoffset: 0%;
-  animation: stroke-offset 5.5s infinite linear;
-}
-
-.text-copy:nth-child(1){
-stroke: whitesmoke;
-animation-delay: -1;
-}
-
-.text-copy:nth-child(2){
-stroke: #3a021b;
-animation-delay: -2s;
-}
-
-.text-copy:nth-child(3){
-stroke: #d01832;
-animation-delay: -3s;
-}
-
-.text-copy:nth-child(4){
-stroke: #ff8a9c;
-animation-delay: -4s;
-}
-
-.text-copy:nth-child(5){
-stroke: #312d2e;
-animation-delay: -5s;
-}
-
-@keyframes stroke-offset{
-100% {stroke-dashoffset: -35%;}
-}
+  
 
 header nav ul {
   display: flex;
@@ -106,7 +55,7 @@ header nav ul li a {
   font-weight: lighter;
   font-size: 1.2vw;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  color: whitesmoke;
+  color: #8d8d8d;
 }
 
 header nav ul li a:hover {
@@ -116,9 +65,6 @@ header nav ul li a:hover {
   text-shadow: none;
 }
 
-.main-bio {
-  margin: 200px;
-}
 
   /* Hero Section */
 
@@ -148,18 +94,19 @@ header nav ul li a:hover {
 
 
 .bio-section {
-  background-color: black;
+  margin-top: 30em;
+  background-color: #353535;
   display: flex;
   flex-wrap: wrap;
-  border-top: 2px solid white;
   padding-top: 10px;
   padding-bottom: 15px;
   width: 100%;
   z-index: 2000;
+
 }
 
 .bio-section h1 {
-  color: white;
+  color: #8d8d8d;
   font-weight: bold;
   text-align: right;
   margin-right: 20px;
@@ -168,7 +115,7 @@ header nav ul li a:hover {
 }
 
 .bio-section p {
-  color: white;
+  color: #8d8d8d;
   width: 80%;
   text-align: justify;
   margin-left: 2em;
@@ -179,7 +126,7 @@ header nav ul li a:hover {
 .headshot {
   width: 12.5rem;
   height: 12.5rem;
-  clip-path: polygon(76% 7%, 100% 50%, 76% 91.5%, 25% 91.5%, 0 50%, 24% 7%);
+
   transform: scale(.80);
   overflow: hidden;
   z-index: 10;
@@ -211,6 +158,17 @@ header nav ul li a:hover {
   align-items: center;
   border: 2px solid silver;
   border-radius: 5px;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: all 1s ease;
+}
+
+.grid-item:hover {
+  filter: grayscale(0%);
+  filter: gray;
+  -webkit-filter: grayscale(0%);
+  filter: none;
+  transition: 1s ease;
 }
 
 .item-1 {
@@ -242,15 +200,19 @@ header nav ul li a:hover {
 }
 
 .site-img {
-
-  background-size: cover;
   overflow: hidden;
 }
 
 .site-img h3 {
   position: relative;
   font-size: 24px;
+  transition: 1s ease;
 
+}
+
+.site-img h3:hover {
+  font-size: 24px;
+  transition: 1s ease;
 }
 
 .contactinfo {
@@ -305,14 +267,15 @@ footer a {
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
   
-  
+}
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
 
-  .bio-section h1 {
+.bio-section h1 {
     text-align: wrap;
-  }
+}
+}
  
 
 
@@ -344,4 +307,5 @@ header nav ul li a {
   display: inline-block;
   justify-content: center;
   align-items: flex-start;
+}
 }
