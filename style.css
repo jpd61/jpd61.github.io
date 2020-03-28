@@ -1,11 +1,12 @@
 
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
+  body {
     font-family: Arial, sans-serif;
   }
   
@@ -188,108 +189,68 @@ header nav ul li a:hover {
 
 .portfolio {
   width: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
   padding: 5px;
   z-index: 1000;
   background-color: black;
   color: white;
 }
 
-.site {
-  margin: 20px;
-  background: var(--secondary-color);
-  color: var(--primary-color);
-  flex: 1;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-auto-flow: dense;
+  width:80%;
+  margin-left: 2em;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 2px solid silver;
-  min-width: 400px;
+  border-radius: 5px;
+}
+
+.item-1 {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+  background-image: url("./assets/images/valor-mineral-management.png");
+  background-size: cover;
+}
+
+.item-2 {
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
+  background-image: url("./assets/images/clear-fork-royalty.png");
+  background-size: cover;
+}
+
+.item-3 {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+    background-image: url("./assets/images/runbuddy.png");
+    background-size: cover;
+}
+
+.item-4 {
+      grid-column: 2 / span 1;
+      grid-row: 3 / span 1;
+      background-image: url("./assets/images/pack684.png");
+      background-size: cover;
 }
 
 .site-img {
-  width: 100%;
-  min-height: 300px;
-  display: flex;
-  padding: 15px;
-  align-items: flex-end;
+
   background-size: cover;
-  position: relative;
   overflow: hidden;
-}
-
-.site-img::after {
-  content: "";
-  height: 100%;
-  width: 100%;
-  background: rgba(138, 138, 138, 0.3);
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: linear-gradient(rgba(138, 138, 138, 0.3), darkgray);
-  opacity: 0;
-}
-
-.site-img:hover::after {
-  opacity: 1;
-  transition-duration: 0.6s;
 }
 
 .site-img h3 {
   position: relative;
-  z-index: 5000;
   font-size: 24px;
-  margin-bottom: 5px;
-  top: 200px;
-  transition-duration: 0.6s;
-}
 
-.site-img h4 {
-  position: relative;
-  z-index: 5000;
-  font-size: 20px;
-  top: 200px;
-  transition-duration: 0.6s;
-}
-
-.site:hover .site-img h3, .site:hover .site-img h4 {
-  top: 0px;
-}
-
-.site-bio {
-  overflow: auto;
-  background-color: black;
-}
-
-.site-bio h3 {
-  font-size: 28px;
-  display: none;
-}
-
-.site-bio h4 {
-  font-weight: lighter;
-  font-size: 22px;
-
-  display: none;
-}
-
-.site-bio p {
-  font-size: 17px;
-}
-
-.site-1 {
-  background-image: url("./assets/images/valor-mineral-management.png");
-}
-
-.site-2 {
-  background-image: url("./assets/images/clear-fork-royalty.png");
-}
-
-.site-3 {
-  background-image: url("./assets/images/runbuddy.png");
-}
-
-.site-4 {
-  background-image: url("./assets/images/pack684.png");
 }
 
 .contactinfo {
