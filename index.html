@@ -2,7 +2,7 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"/>
@@ -24,28 +24,30 @@
 
 
       <!-- Navigation -->
-      <nav>
+      <div class="container position-sticky">
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #353535;">
         <!-- Unordered list element -->
-        <ul>
+        <ul class="navbar-nav">
             <!-- List item element -->
-            <li>
+            <li class="nav-item">
                 <!-- Anchor element -->
-                <a href="#about" style="text-decoration:none">About</a>
+                <a class="nav-link" href="#about" style="text-decoration:none">About</a>
             </li>
-            <li>
-                <a href="#portfolio" style="text-decoration:none">Portfolio</a>
+            <li class="nav-item">
+                <a class="nav-link" href="#portfolio" style="text-decoration:none">Portfolio</a>
             </li>
-            <li>
-                <a href="#contact-info" style="text-decoration:none">Contact</a>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact-info" style="text-decoration:none">Contact</a>
             </li>
         </ul>
     </nav>
+      </div>
 
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-
+      <div class="container">
           <article id="about" class="bio-section">
               <h1>JOSEPH DEWOODY</h1>
               
@@ -66,55 +68,47 @@
 
           </article>
           
-        
+      </div>
     </section>
 
     <!-- Portfolio -->
     <!-- text-decoration:none not working through css: because of the way I linked it? used on html for now-->
     <section id="portfolio" class="portfolio">
+      <div class="container">
       <h2>Portfolio</h2>
       
-        <div class="grid-container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="view overlay z-depth-1-half">
+              <a href="https://www.valormineralmanagement.com/"><img src="./assets/images/valor-mineral-management.png" class="img-fluid"></a>
+            </div>
+          </div>
 
-          <a href="https://www.valormineralmanagement.com/" style="text-decoration:none" class="grid-item item-1">  
-              <div>
-                <div>
-                    <h3>VALOR MINERAL MANAGEMENT</h3>
-                </div>
-              </div>
-          </a>
+          <div class="col-sm-4">
+            <div class="view overlay z-depth-1-half">
+              <a href="https://www.clearforkroyalty.com/"><img src="./assets/images/clear-fork-royalty.png" class="img-fluid"></a>
+            </div>
+          </div>
 
-          <a href="https://www.clearforkroyalty.com/" style="text-decoration:none" class="grid-item item-2"> 
-              <div>
-                <div>
-                    <h3>CLEAR FORK ROYALTY</h3>
-                </div>
-              </div>
-          </a>
+          <div class="col-sm-4">
+            <div class="view overlay z-depth-1-half">
+              <a href="https://jpd61.github.io/run-buddy/"><img src="./assets/images/runbuddy.png" class="img-fluid"></a>
+            </div>
+          </div>
 
-          <a href="https://jpd61.github.io/run-buddy/" style="text-decoration:none" class="grid-item item-3">  
-              <div>
-                <div>
-                    <h3>RUN BUDDY</h3>
-                </div>
-              </div>
-          </a>
-
-
-          <a href="https://www.cubscoutpack684.org/" style="text-decoration:none" class="grid-item item-4">  
-              <div>
-                <div>
-                    <h3>CUB SCOUTS PACK 684</h3>
-                </div>
-              </div>
-          </a>
-
+          <div class="col-sm-4">
+            <div class="view overlay z-depth-1-half">
+              <a href="https://www.cubscoutpack684.org/"><img src="./assets/images/pack684.png" class="img-fluid"></a>
+            </div>
+          </div>
         </div>
 
+      </div>
     </section>
 
 
       <div id="contact-info" class="contact-info">
+        <div class="container">
         <ul>
           <li><a href="mailto:jpd@dewoodyoil.com"><img alt="E-Mail" src="./assets/images/gmail.png"></a></li>
           <li><a href="https://github.com/jpd61"><img alt="GitHub" src="./assets/images/github.png"></a></li>
@@ -124,12 +118,15 @@
           <li><a href="https://twitter.com/jpdewoody"><img alt="Twitter" src="./assets/images/twitter.png"></a></li>
           <li><a href="https://www.facebook.com/dewoody"><img alt="Facebook" src="./assets/images/facebook.png"></a></li>
         </ul>
+        </div>
       </div>
 
 
     <!-- footer -->
     <footer>
+      <div class="container">
       <p>&copy; 2020 Joseph DeWoody</p>
+        </div>  
   </footer>
     
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
