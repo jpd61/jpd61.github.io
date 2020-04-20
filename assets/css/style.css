@@ -91,14 +91,6 @@ body {
   margin: auto;
 }
 
-@media (min-width: 48em) {
-  .masthead-brand {
-    float: left;
-  }
-  .nav-masthead {
-    float: right;
-  }
-}
 
 .cover {
   padding: 0 1.5rem;
@@ -110,4 +102,14 @@ body {
 
 .mastfoot {
   color: rgba(255, 255, 255, .5);
+}
+
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
 }
