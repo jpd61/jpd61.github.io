@@ -67,6 +67,10 @@ body {
 
 }
 
+.bottom-buffer {
+  margin-bottom: 15px;
+}
+
 @media (min-width: 48em) {
   .masthead-brand {
     float: left;
