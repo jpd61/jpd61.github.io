@@ -14,7 +14,6 @@
     <!-- Fontawesome.com -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
 
-    <link rel="stylesheet" type="text/css" href="./assets/css/main.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
 
     <title>Joseph DeWoody</title>
@@ -23,7 +22,8 @@
   <body class="text-center">
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
 
-      <header class="masthead mb-auto" style=background-image: url('./assets/images/header.jpg');">
+      <!-- style="background-image: url('./assets/images/header.jpg');" -->
+      <header class="masthead mb-auto">
         <div class="inner">
             <h3 class="masthead-brand">Joseph DeWoody</h3>
           <nav class="nav nav-masthead justify-content-center">
@@ -35,7 +35,7 @@
       </header>
 
       <main class="inner cover">
-        <div class="container">
+        <div>
           <article id="about" class="bio-section">
               <div class="headshot-container">
                 <div class="headshot">
@@ -48,61 +48,74 @@
               </div>
 
               <div class="bio-text">
-              <p>
-              I am an entrepreneur and energy executive that has spent my career in oil and gas acquisitions and management. 
+              <p> 
               This is where I am learning website development. Some of my work is below:
               </p></div>
           </article>
         </div>
 
       <section id="portfolio" class="portfolio">
-        <div class="container">
+        <div>
           <h2>Portfolio</h2>
     
+        <div class="col-12">
           <div class="row">
-            <div class="col-sm-4">
-              <div class="view overlay z-depth-1-half">
-                <a href="https://www.valormineralmanagement.com/"><img src="./assets/images/valor-mineral-management.png" class="img-fluid"></a>
+
+              <div class="col-md-6">
+                <div class="view overlay z-depth-1-half">
+                  <a href="https://www.valormineralmanagement.com/"><img src="./assets/images/valor-mineral-management.png" class = "img-responsive" width = "100%"></a>
+                </div>
               </div>
-            </div>
 
-          <div class="col-sm-4">
-            <div class="view overlay z-depth-1-half">
-              <a href="https://www.clearforkroyalty.com/"><img src="./assets/images/clear-fork-royalty.png" class="img-fluid"></a>
-            </div>
+              <div class="col-md-6">
+                <div class="view overlay z-depth-1-half">
+                  <a href="https://www.clearforkroyalty.com/"><img src="./assets/images/clear-fork-royalty.png" class = "img-responsive" width = "100%"></a>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="view overlay z-depth-1-half">
+                  <a href="https://jpd61.github.io/run-buddy/"><img src="./assets/images/runbuddy.png" class = "img-responsive" width = "100%"></a>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="view overlay z-depth-1-half">
+                  <a href="https://www.cubscoutpack684.org/"><img src="./assets/images/pack684.png" class = "img-responsive" width = "100%"></a>
+                </div>
+              </div>
           </div>
-
-          <div class="col-sm-4">
-            <div class="view overlay z-depth-1-half">
-              <a href="https://jpd61.github.io/run-buddy/"><img src="./assets/images/runbuddy.png" class="img-fluid"></a>
-            </div>
-          </div>
-
-          <div class="col-sm-4">
-            <div class="view overlay z-depth-1-half">
-              <a href="https://www.cubscoutpack684.org/"><img src="./assets/images/pack684.png" class="img-fluid"></a>
-            </div>
-          </div>
-
         </div>
 
       </section>
 
 
-      <div id="contact-info" class="contact-info">
-        <div class="container">
-          <ul>
-            <li><a href="mailto:jpd@dewoodyoil.com"><img alt="E-Mail" src="./assets/images/gmail.png"></a></li>
-            <li><a href="https://github.com/jpd61"><img alt="GitHub" src="./assets/images/github.png"></a></li>
-            <li><a href="https://stackexchange.com/users/17864144/jpd61"><img alt="StackOverflow" src="./assets/images/stackoverflow.png"></a></li>
-            <li><a href="https://angel.co/joseph-dewoody"><img alt="Angellist" src="./assets/images/angellist.png"></a></li>
-            <li><a href="https://www.linkedin.com/in/josephdewoody/"><img alt="LinkedIn" src="./assets/images/linkedin.png"></a></li>
-            <li><a href="https://twitter.com/jpdewoody"><img alt="Twitter" src="./assets/images/twitter.png"></a></li>
-            <li><a href="https://www.facebook.com/dewoody"><img alt="Facebook" src="./assets/images/facebook.png"></a></li>
-          </ul>
-        </div>
-      </div>
-</main>
+            <div id="contact-info" class="contact-info">
+              
+              <div class="col-12">
+                <div class="row">
+                    <div class="col-sm-2">
+                    <a href="mailto:jpd@dewoodyoil.com"><img alt="E-Mail" src="./assets/images/gmail.png" class = "img-responsive" width = "100%"></a>
+                  </div>
+                    <div class="col-sm-2">
+                    <a href="https://github.com/jpd61"><img alt="GitHub" src="./assets/images/github.png" class = "img-responsive" width = "100%"></a>
+                  </div>
+                    <div class="col-sm-2">
+                    <a href="https://angel.co/joseph-dewoody"><img alt="Angellist" src="./assets/images/angellist.png" class = "img-responsive" width = "100%"></a>
+                  </div>
+                    <div class="col-sm-2">
+                    <a href="https://www.linkedin.com/in/josephdewoody/"><img alt="LinkedIn" src="./assets/images/linkedin.png" class = "img-responsive" width = "100%"></a>
+                  </div>
+                    <div class="col-sm-2">
+                    <a href="https://twitter.com/jpdewoody"><img alt="Twitter" src="./assets/images/twitter.png" class = "img-responsive" width = "100%"></a>
+                  </div>
+                    <div class="col-sm-2">
+                    <a href="https://www.facebook.com/dewoody"><img alt="Facebook" src="./assets/images/facebook.png" class = "img-responsive" width = "100%"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </main>
 
     <!-- footer -->
     <footer class="mastfoot mt-auto">
@@ -110,7 +123,8 @@
       <p>&copy; 2020 Joseph DeWoody</p>
         </div>  
     </footer>
-    
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
@@ -118,7 +132,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./assets/js/script.js"></script>
-    </div>
+
 
   </body>
 

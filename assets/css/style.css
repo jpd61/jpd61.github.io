@@ -61,6 +61,12 @@ body {
   border-bottom-color: #fff;
 }
 
+.row {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+}
+
 @media (min-width: 48em) {
   .masthead-brand {
     float: left;
