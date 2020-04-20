@@ -29,8 +29,8 @@
       <!-- style="background-image: url('./assets/images/header.jpg');" -->
 
             
-          <!-- navigation -->
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+      <!-- navigation -->
+      <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
         <div class="container-fluid">
           <h3 class="navbar-brand">Joseph DeWoody</h3>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
@@ -55,9 +55,172 @@
         </div>
       </nav>
 
+      <!-- new section for sliding images -->
+      <div id="slides" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#slides" data-slide-to="0" class="active"></li>
+          <li data-target="#slides" data-slide-to="1"></li>
+          <li data-target="#slides" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/images/header.jpg">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/header.jpg">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/header.jpg">
+          </div>
+        </div>
+      </div>
 
-      <main class="inner cover">
-        <div>
+      <!-- jumbotron-->
+      <div class="container-fluid">
+        <div class="row jumbotron">
+          <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+            <p class="lead">A site where I am learning software development</p>
+          </div>
+          <div class="col-sx-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+            <a href="#"><button type="button" class="btn btn-outline-secondary btn-lg">Web Hosting</button></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- welcome section -->
+      <div class="container-fluid padding">
+        <div class="row welcome text-center">
+          <div class="col-12">
+            <h1 class="display-4">Built with ease.</h1>
+          </div>
+          <hr>
+          <div class="col-12">
+            <p class="lead">Welcome to my website where I am learning software development</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- three column section -->
+      <div class="container-fluid padding">
+        <div class="row text-center padding">
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <i class="fas fa-code"></i>
+            <h3>HTML5</h3>
+            <p class="lead">Built with the latest version of HTML, HTML5.</p>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <i class="fas fa-bold"></i>
+            <h3>BOOTSTRAP</h3>
+            <p class="lead">Built with the latest version of Bootstrap, Bootstrap 4.</p>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <i class="fab fa-css3"></i>
+            <h3>BOOTSTRAP</h3>
+            <p class="lead">Built with the latest version of CSS, CSS3s.</p>
+          </div>
+        </div>
+        <hr class="my-4">
+      </div>
+
+      <!-- two column section -->
+      <div class="container-fluid padding">
+        <div class="row padding">
+          <div class="col-md-12 col-lg-6">
+            <h2>If you build it...</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, laborum sed! Facilis voluptatibus id laboriosam consequuntur optio, maiores maxime fugiat incidunt pariatur exercitationem aperiam provident quasi minus, sapiente qui officiis.</p>
+            <br>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+          <div class="col-lg-6">
+            <img src="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+
+      <!-- horizontal rule and fixed image background -->
+      <hr class="my-4">
+
+      <!-- <figure>
+        <div class="fix-wrap">
+          <div id="fixed">
+
+          </div>
+        </div>
+      </figure> -->
+
+      <!-- hidden emoji section -->
+      <button class="fun" data-toggle="collapse" data-target="#emoji">click for fun</button>
+      <div id="emoji" class="collapse">
+        <div class="container-fluid padding">
+          <div class="row text-center">
+            <div class="col-sm-6 col-md-3">
+              <img class="gif" src="./assets/images/gif/panda.gif">
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <img class="gif" src="./assets/images/gif/poo.gif">
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <img class="gif" src="./assets/images/gif/unicorn.gif">
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <img class="gif" src="./assets/images/gif/chicken.gif">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- "meet the team" -->
+      <div class="container-fluid padding">
+        <div class="row welcome text-center">
+          <div class="col-12">
+            <h1 class="display-4">Portfolio</h1>
+          </div>
+
+          <hr>
+
+          <div class="container-fluid padding">
+            <div class="row padding">
+              <div class="col-md-4">
+                <div class="card">
+                  <img class="card-img-top" src="./assets/images/valor-mineral-management.png">
+                  <div class="card-body">
+                    <h4 class="card-title">Valor Mineral Management</h4>
+                    <p class="card-text">Valor Mineral Management is a comprehensive Mineral Management Company</p>
+                    <a href="#" class="btn btn-outline-secondary">Visit</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card">
+                  <img class="card-img-top" src="./assets/images/clear-fork-royalty.png">
+                  <div class="card-body">
+                    <h4 class="card-title">Clear Fork Royalty</h4>
+                    <p class="card-text">Clear Fork Royalty is a mineral rights acquisition company</p>
+                    <a href="#" class="btn btn-outline-secondary">Visit</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card">
+                  <img class="card-img-top" src="./assets/images/runbuddy.png">
+                  <div class="card-body">
+                    <h4 class="card-title">Run Buddy</h4>
+                    <p class="card-text">Visit Run Buddy Today</p>
+                    <a href="#" class="btn btn-outline-secondary">Visit</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      
+        <!-- <div>
           <div id="about">
             <div class="row">
             <div class="col-4">
@@ -81,9 +244,9 @@
             </div>
           </div>
         </div>
-        </div>
+        </div> -->
 
-      <section id="portfolio">
+      <!-- <section id="portfolio">
     
         <div class="col-12 container-fluid">
 
@@ -116,10 +279,29 @@
           </div>
         </div>
 
-      </section>
+      </section> -->
 
 
-            <div id="contact-info" class="contact-info">
+            <!-- connect section redo -->
+            <div class="container-fluid padding">
+              <div class="row text-center padding">
+                <div class="col-12">
+                  <h2>Connect</h2>
+                </div>
+                <div class="col-12 social padding">
+                  <a href="https://www.facebook.com/dewoody"><i class="fab fa-facebook"></i></a>
+                  <a href="https://twitter.com/jpdewoody"><i class="fab fa-twitter"></i></a>
+                  <a href="mailto:jpd@dewoodyoil.com"><i class="fab fa-instagram"></i></a>
+                  <a href="mailto:jpd@dewoodyoil.com"><i class="fas fa-at"></i></a>
+                  <a href="https://www.linkedin.com/in/josephdewoody/"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://github.com/jpd61"><i class="fab fa-github"></i></a>
+                  <a href="https://angel.co/joseph-dewoody"><i class="fab fa-angellist"></i></a>
+                </div>
+              </div> 
+            </div>
+
+
+            <!-- <div id="contact-info" class="contact-info">
               
               <div class="col-12">
                 <div class="row">
@@ -143,16 +325,19 @@
                   </div>
                 </div>
               </div>
-            </div>
-      </main>
+            </div> -->
 
     <!-- footer -->
-    <footer class="mastfoot mt-auto">
-      <div class="inner">
-      <p>&copy; 2020 Joseph DeWoody</p>
-        </div>  
+    <footer>
+      <div class="container-fluid padding">
+        <div class="row text-center">
+          <div class="col-md-12">
+            <p>Joseph DeWoody</p>
+            <hr class="light">
+          </div>
+        </div>
+      </div>
     </footer>
-    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
