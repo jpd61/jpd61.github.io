@@ -19,37 +19,25 @@
     <title>Joseph DeWoody</title>
   </head>
 
-  <body>
-    <header>
-
-
-      <!-- Navigation -->
-      <div class="container position-sticky">
-      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #353535;">
-        <!-- Unordered list element -->
-        <ul class="navbar-nav">
-            <!-- List item element -->
-            <li class="nav-item">
-                <!-- Anchor element -->
-                <a class="nav-link" href="#about" style="text-decoration:none">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#portfolio" style="text-decoration:none">Portfolio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#contact-info" style="text-decoration:none">Contact</a>
-            </li>
-        </ul>
-    </nav>
+  <body class="text-center">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="masthead mb-auto">
+      <div class="inner">
+        <h3 class="masthead-brand">Joseph DeWoody</h3>
+      <nav class="nav nav-masthead justify-content-center">
+          <a class="nav-link" href="#about" style="text-decoration:none">About</a>
+          <a class="nav-link" href="#portfolio" style="text-decoration:none">Portfolio</a>
+          <a class="nav-link" href="#contact-info" style="text-decoration:none">Contact</a>
+      </nav>
       </div>
 
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-      <div class="container">
+    <main class="inner cover">
+        <div class="container">
           <article id="about" class="bio-section">
-              <h1>JOSEPH DEWOODY</h1>
+              
               
               <div class="headshot-container">
                 <div class="headshot">
@@ -67,9 +55,8 @@
             </p></div>
 
           </article>
-          
-      </div>
-    </section>
+        </div>
+    </main>
 
     <!-- Portfolio -->
     <!-- text-decoration:none not working through css: because of the way I linked it? used on html for now-->
@@ -123,8 +110,8 @@
 
 
     <!-- footer -->
-    <footer>
-      <div class="container">
+    <footer class="mastfoot mt-auto">
+      <div class="inner">
       <p>&copy; 2020 Joseph DeWoody</p>
         </div>  
   </footer>
@@ -136,7 +123,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <script src="./assets/js/script.js"></script>
-
+</div>
+<span id="buffer-extension-hover-button" style="display: none; position: absolute; z-index: 8675309; width: 100px; height: 25px; background-image: url("./assets/images/header.jpg"); background-size: 100px 25px; opacity: 0.9; cursor: pointer;"></span>
   </body>
 
 </html>
