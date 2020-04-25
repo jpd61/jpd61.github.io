@@ -7,7 +7,7 @@
 [![jQuery](https://img.shields.io/badge/jQuery-blue)](https://jquery.com/)
 
 
-This is where I am learning web development and developing a personal portfolio page of my work
+This is where I am learning web development and developing a personal portfolio page of my work. **I have changed totally since my first submission to implement all that I learned in bootstrap**
 
 https://jpd61.github.io/
 
