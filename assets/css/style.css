@@ -130,6 +130,10 @@ html, body {
   color: red;
 }
 
+.fa-stack-overflow {
+  color: orangered;
+}
+
 .fa-angellist {
   color: black;
 }
@@ -140,7 +144,8 @@ html, body {
 .fa-at:hover, 
 .fa-linkedin:hover, 
 .fa-github:hover, 
-.fa-angellist:hover {
+.fa-angellist:hover,
+.fa-stack-overflow:hover {
   color: #d5d5d5;
 }
 

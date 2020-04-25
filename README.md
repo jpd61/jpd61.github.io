@@ -2,9 +2,9 @@
 
 ![HTML5](https://img.shields.io/badge/HTML5-orange)
 ![CSS](https://img.shields.io/badge/CSS-blue)
-![Javascript](https://img.shields.io/badge/Javascript-yellow)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-purple)
-[![jQuery](https://img.shields.io/badge/jQuery-blue)](https://jquery.com/)
+![Javascript](https://img.shields.io/badge/Javascript-yellow)
+![jQuery](https://img.shields.io/badge/jQuery-blue)](https://jquery.com/)
 
 
 This is where I am learning web development and developing a personal portfolio page of my work. **I have changed totally since my first submission to implement all that I learned in bootstrap**
