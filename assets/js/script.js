@@ -9,7 +9,7 @@ https://github.com/jpd61/jpd61.github.io
 
 
 
-var newsUrl = 'http://newsapi.org/v2/top-headlines?' +
+var newsUrl = 'https://newsapi.org/v2/top-headlines?' +
           'country=us&' +
           'category=business&' +
           'apiKey=b25d20345a0649a68aca9e4e98da269d';
