@@ -27,7 +27,7 @@ fetch(req)
             let topNews = `   
             <h6><a href="${newsResponse.articles[i].url}">${searchTerm}</a></h6>
             `;
-            $('#news').append(topNews);
+            $('#news-contain').append(topNews);
 
 
 
