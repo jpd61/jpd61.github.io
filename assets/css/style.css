@@ -103,8 +103,12 @@ html, body {
   color: #2163af;
 }
 
-.fa-code, .fa-bold, .fa-css3 {
-  font-size: 4em;
+.fa-js-square {
+  color: #f0db4f;
+}
+
+.fa-code, .fa-bold, .fa-css3, .fa-js-square {
+  font-size: 3.5em;
   margin: 1rem;
 }
 
