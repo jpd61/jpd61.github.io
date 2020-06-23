@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" />
+
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+
+    <!-- Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <!-- Fontawesome.com -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+
+    <title>Joseph DeWoody</title>
+  </head>
+
+  <body class="text-center">
+    <div>
+
+      <!-- navigation -->
+      {{> navigation}}
+
+      <!-- new section for sliding images -->
+    {{> carousel }}
+
+      <!-- jumbotron-->
+{{> jumbotron }}
+
+      <!-- welcome section -->
+{{> welcome }}
+
+      <!-- three column section -->
+{{> tech }}
+
+      <!-- two column section -->
+{{> description }}
+
+      <!-- hidden emoji section -->
+{{> emojis }}
+
+      <!-- Portfolio of created sites -->
+      {{> portfolio }}
+      
+      <div class="container-fluid">
+        <a class="anchor" id="news"></a>
+        <div class="row text-center">
+          <div class="col-12">
+          <div class="display-4" id="news-contain"><h6>Top Business News (newsapi.org): </h6></div></div>
+        </div>
+      </div>
+
+      <hr class="my-4">
+      
+            <!-- connect section redo -->
+{{> connect }}
+
+    <!-- footer -->
+    <footer>
+{{> footer}}
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="/javascript/script.js"></script>
+
+
+  </body>
+
+</html>
