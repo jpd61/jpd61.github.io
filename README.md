@@ -14,7 +14,7 @@ http://dewoody.io/
 
 <a href="http://dewoody.io/">Link to deployed application</a>
 
-Site moved to herooku:
+Site moved to heroku:
 
 Link also <a href="https://dewoodyio.herokuapp.com/">here</a> while DNS is updating.
 
