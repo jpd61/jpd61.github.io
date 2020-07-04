@@ -50,6 +50,10 @@ a.anchor {
   text-align: justify;
 }
 
+.carousel-caption a {
+  font-size: 80%;
+}
+
 #nasa-pull {
   z-index: -1;
   height: 750px;
