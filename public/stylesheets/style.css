@@ -84,6 +84,9 @@ a.anchor {
 .jumbotron {
   padding: 1rem;
   border-radius: 0;
+}
+
+.jumbotron a {
   font-size: 75%;
 }
 
