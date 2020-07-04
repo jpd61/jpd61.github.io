@@ -41,8 +41,8 @@ var nasaImageDay = (event => {
     .then((response) => {
         console.log(response)
         $('#nasa-pull').css("background-image", `url('${response.hdurl}')`);
-        $('#nasa-title').html(`${response.title}`)
-        $('#nasa-desc').html(`${response.explanation}`)
+        // $('#nasa-title').html(`${response.title}`)
+        // $('#nasa-desc').html(`${response.explanation}`)
     })
 })
 

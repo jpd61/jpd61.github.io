@@ -32,7 +32,7 @@ a.anchor {
 
 .carousel-caption {
   position: absolute;
-  top: 50%;
+  top: 35%;
   transform: translateY(-50%);
 }
 
@@ -95,7 +95,7 @@ a.anchor {
 }
 
 .portfolio {
-  width: 75%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -154,6 +154,10 @@ a.anchor {
 }
 
 .fa-github {
+  color: black;
+}
+
+.fa-user-astronaut {
   color: black;
 }
 
